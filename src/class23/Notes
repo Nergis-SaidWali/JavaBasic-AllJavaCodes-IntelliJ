@@ -1,0 +1,42 @@
+Method Overriding:
+    Method overriding allows us to have same header methos in parent and child classes.
+
+Why we should override?
+    1) When we inherit from a class everything other than private methods and constructors is inherited
+    if we don't like any method from the parent we can override.
+    2)It helps us achieve polymorphism.
+
+What is the syntax to override a method?
+    1) First there must be a parent child relationship.
+    2) In the child class just redefine the method.
+
+Type casting in objects:
+    As we can type cast in the primitive data types, we can also type cast objects.
+    Like storing the object of a child class in a variable of parent type.
+
+Why we should type cast objects?
+    With the help of type casting, we can start storing the objects of child classes in an array of type parent.
+
+What is the syntax to type cast?
+    It's same as primitive type casting. For example; if we have an animal class and animal class has a child class Cat
+    we can do:
+    Animal animal=new Cat();
+
+Polymorphism:
+    It is the ability of a method to take on many forms based on the object or the parameters that we pass to the method.
+
+Types of polymorphism:
+    There are 2 types of polymorphism.
+    1) Compile Time/static/early binding
+When we use method overloading to achieve polymorphism, it is called compile time polymorphism.
+    2) Run time/ dynamic/lare binding
+When we use method overriding to achieve polymorphism, it is called run time polymorphism.
+
+Final Keyword:
+    Final keyword is just like any other keyword in Java like class, package, void etc.
+    There are three main usage of final keyword:
+    1) If we use final keyword with a class, no other class can inherit from that class.(We can still create the object of that class.
+    2) If we use it with the method name, no child class can override that method.
+    3) If we use it with a field, once the value has been assigned to that field, no one can change its value afterwards.
+    We cannot use final keyword with a constructor!
+

@@ -1,0 +1,52 @@
+package review4;
+
+public class Banana extends Fruit {
+    String origin;
+    Banana(String name, String shape, String color, String origin) {
+        super(name, shape, color);
+        this.origin=origin;
+    }
+     /* overriding - 2 methods with same name BUT inside Different classes
+	 */
+
+    /* how to override
+     *
+     * 1. method signature MUST be same
+     * 2. return type MUST BE SAME
+     * 3. access modifier/visibility MUST be same or MUST be higher
+     *
+     */
+
+    public void grow() {
+        System.out.println(name+" grows fast and fresh");
+    }
+
+    // when child class have same static method as parent class
+    // we are not achieving overriding.
+    // this calls method hiding
+
+    public static void havePeel() {
+        System.out.println("banana is very easy to peel");
+    }
+
+
+    void makeSmoothie(){
+        System.out.println("from "+name+" we get tasty smoothie");
+    }
+
+    public static void main(String[] args) {
+        Banana ban=new Banana("banana", "banana shape", "yellow", "Ecuador");
+        ban.grow(); //from banana class
+        ban.haveBenefits(); //fruit
+        ban.makeSmoothie(); //banana
+
+        System.out.println("      ----------------------------------    ");
+
+        Fruit fruit=new Banana("banana", "banana shape", "green", "Africa");
+        fruit.grow(); // runtime polymorphism
+        fruit.haveBenefits();
+
+        Fruit.havePeel(); //fruit
+        Banana.havePeel(); //banana
+    }
+}

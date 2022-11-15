@@ -1,0 +1,69 @@
+Collections Framework:
+    It's a collection of classes and interfaces that help us store and manipulate the data efficiently.
+
+Why we should use collections framework?
+    1)It's flexible(we don't need to provide size beforehand).
+    2)It's dynamic(all the classes can increase and decrease at run time).
+    3)There are built in methods to perform common tasks.
+    4)pre-build data structures.
+
+Downsides of Collections Framework:
+    1)We can't use primitive data types, we have to use wrapper classes which occupy 4 times more memory
+    than a primitive.
+    int num=10// 4 memory locations
+    Integer num=10// 16 memory locations
+
+Wrapper classes:
+    Wrapper classes are object types all the primitive types.
+
+Why we should learn about the wrapper classes?
+    1)Because collection framework only supports wrapper classes.
+    2)There are built-in methods to perform tasks.
+
+Downsides of wrapper classes:
+    1)We can't use primitive data types, we have to use wrapper classes which occupy 4 times more memory
+        than a primitive.
+        int num=10// 4 memory locations
+        Integer num=10// 16 memory locations
+
+Boxing:
+    Converting a primitive to its corresponding wrapper type by manually calling methods.
+    int pnum=10;
+    Integer wnum=new Integer(pnum);
+
+Unboxing:
+    converting a wrapper to a primitive by calling a method.
+    Integer wnum=new Integer(10);
+    int pnum=wnum.intValue();
+
+AutoBoxing:
+    converting a wrapper to a primitive without calling any methods.
+    Integer wnum=new Integer(10);
+    int pnum=wnum;
+
+ArrayList class:
+    It is a class in collections framework that allows us to store data like and array.
+    Some common methods from this class are :
+    add(), remove(), contains(), size()
+
+Iterator:
+    It's a mechanism that allows us to iterate and delete data from any class in collections framework.
+    3 famous methods: hasNext(), next(), remove()
+Why we should learn about Iterator?
+    Because loops are not safe when we perform an operation that can change the size of a data structure.
+
+ArrayList Vs LinkedList:
+ArrayList:
+    use an array behind the scenes to store the data.
+    We should use arrayList when we are retrieving the data most of the time and not inserting the data
+    in the start or in between or if we have to shift the data to the list.
+LinkedList:
+    LinkedList does not store the data in consecutive memory locations that's why it is easier anc remove
+    the data from anywhere in a list.
+    If you are going to manipulate the data(shifting of elements) always use linkedList
+
+    If most of the times you use add/remove method then use LinkedList
+    If most of the times you use get method then use ArrayList
+
+
+Sets:

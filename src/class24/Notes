@@ -1,0 +1,7 @@
+Encapsulation
+
+create a setter to limit the assigning values, only if the conditions are met then assign the value
+create a getter fields method for some if we want
+
+when we make fields private and use getter and setter
+"just like a PDF file,we can read it but cant edit.."
