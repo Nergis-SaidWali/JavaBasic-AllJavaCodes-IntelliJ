@@ -1,0 +1,34 @@
+Exceptions:
+    It's an unwanted behaviour that occurs at run time and disturbs the normal flow of the program.
+
+Why we should learn about exception?
+    1)We can use exception to figure out the exact line of code and also get an explanation about that error.
+    2)To convert complex system generated error messages to something that everyone can understand.
+    3)When we are building application for other users like Google Chrome, Discord, Zoom etc. We can use
+    exception handling to improve the user experience. When we handle exception applications no longer terminate abruptly.
+
+What is the syntax?
+    We can handle exceptions using try catch block.
+    We can also utilize finally block and we use some new keywords like throw and throws.
+
+try-catch block:
+    try{
+    //the code that might cause some problems
+    }catch(The name of the class whose exception we are expecting){
+    //Back up code or the code that we want to execute in case the code in try block fails.
+    }finally{
+    //the code that we want to execute no matter what happens in try or catch block.
+    //For example closing the critical resources like files releasing database connection etc.
+    }
+
+    *if we have a checked exception, we can't use it unless and until we use try catch block.
+
+Throw keyword:
+    We use the throw keyword to throw the exceptions.
+
+throws keyword:
+    When we want to avoid writing a try catch block, we can use throws keyword with method header to
+    throw this responsibility to the caller of the method.
+    When we are feeling tired and don't want to do any work on job, so we use throws keyword.
+
+    *e.printStackTrace : is used to print the path to the error and also a simple message that explains the error
